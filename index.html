@@ -46,14 +46,53 @@ input[type=range]{padding:0;accent-color:var(--lead);min-width:140px}
 .legend{background:var(--bg);color:var(--ink);padding:6px 8px;border-radius:8px;font-size:12px;line-height:1.7;box-shadow:0 1px 4px #0004}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-inline-end:4px;vertical-align:middle}
 footer{font-size:12px;color:var(--mute);padding:10px max(3vw,12px) 18px}
+
+.mbar,.strip,.sheetHead{display:none}
+@media(max-width:760px){
+ header{padding:10px 12px 6px}
+ h1{font-size:20px}
+ .sub{display:none}
+ .mbar{display:flex;gap:8px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:1100}
+ .mbar button{font:inherit;font-size:15px;min-height:42px;padding:0 14px;border-radius:21px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+ .seg{display:flex;border:1px solid var(--line);border-radius:21px;overflow:hidden}
+ .seg button{border:0;border-radius:0;min-height:40px}
+ .seg button[aria-pressed=true]{background:var(--lead);color:#fff}
+ .mbar .count{font-size:13px;margin-inline-start:auto}
+ .filters{display:none;position:fixed;inset:auto 0 0 0;max-height:80dvh;overflow-y:auto;z-index:2000;border:0;border-radius:18px 18px 0 0;box-shadow:0 -6px 24px #0005;padding:14px 16px 20px;flex-direction:column;align-items:stretch;gap:12px}
+ .filters.open{display:flex}
+ .filters label{font-size:13px}
+ .filters select{min-height:46px}
+ .filters .count{display:none}
+ .sheetHead{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:17px}
+ .sheetHead button{font:inherit;font-size:15px;min-height:44px;padding:0 18px;border:0;border-radius:22px;background:var(--lead);color:#fff}
+ .shade{position:fixed;inset:0;background:#0006;z-index:1900;display:none}.shade.open{display:block}
+ .wrap{display:block;height:auto;min-height:0}
+ body[data-view=map] .list{display:none}
+ body[data-view=list] #map,body[data-view=list] .strip{display:none}
+ #map{height:calc(100dvh - 104px)}
+ .list{padding:10px 12px 20px;border:0}
+ .strip{display:flex;position:fixed;inset:auto 0 calc(12px + env(safe-area-inset-bottom)) 0;z-index:1050;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 12px;scrollbar-width:none}
+ .strip::-webkit-scrollbar{display:none}
+ .strip .c{flex:0 0 86%;scroll-snap-align:center;box-shadow:0 4px 16px #0004;background:var(--bg);padding:10px 12px;gap:4px}
+ .strip .c h3{font-size:14px}
+ .strip .tags span{font-size:11px}
+ .leaflet-popup{display:none}
+ .legend{display:none}
+ footer{display:none}
+ body[data-view=list] footer{display:block}
+}
+
 @media(max-width:980px){.wrap{grid-template-columns:1fr;height:auto}#map{height:58vh}.list{border:0;overflow:visible}}
 </style></head>
-<body>
+<body data-view="map">
 <header>
   <h1>فلل للبيع في المعبيلة والسيب</h1>
   <p class="sub">74 فيلا بسعر من 50 إلى 78 ألف ريال، جُمعت من السوق المفتوح وOman Real وBayut، وتأكدنا إنها كلها معروضة بتاريخ 22 نوفمبر 2026. اضغط على أي فيلا في القائمة عشان تشوفها على الخريطة.</p>
 </header>
-<div class="filters" role="group" aria-label="الفلاتر">
+<div class="mbar"><button id="mf">الفلاتر</button><div class="seg" role="group" aria-label="طريقة العرض"><button id="vm" aria-pressed="true">الخريطة</button><button id="vl" aria-pressed="false">القائمة</button></div><span class="count" id="mcnt"></span></div>
+<div class="shade" id="shade"></div>
+<div class="filters" id="filters" role="group" aria-label="الفلاتر">
+  <div class="sheetHead"><span>الفلاتر</span><button id="mclose">عرض النتائج</button></div>
   <label>أقصى سعر: <b id="pv">78,000</b><input type="range" id="fp" min="50000" max="78000" step="1000" value="78000"></label>
   <label>غرف النوم<select id="fr"><option value="0">أي عدد</option><option value="4" selected>4 فأكثر</option><option value="5">5 فأكثر</option></select></label>
   <label>المنطقة<select id="fa"><option value="">الكل</option><option>المعبيلة</option><option>السيب والشرادي</option><option>الشخاخيط</option></select></label>
@@ -64,6 +103,7 @@ footer{font-size:12px;color:var(--mute);padding:10px max(3vw,12px) 18px}
   <span class="count" id="cnt"></span>
 </div>
 <div class="wrap"><div id="map" aria-label="خريطة الفلل"></div><div class="list" id="list"></div></div>
+<div class="strip" id="strip" aria-label="الفلل على الخريطة"></div>
 <footer>المدارس والمساجد والمراكز الصحية والأسواق مأخوذة من OpenStreetMap، وفيها نقص خصوصًا في المساجد الصغيرة، فالمسافة الحقيقية غالبًا أقصر من المكتوب. المسافات محسوبة بخط مستقيم. فلل Oman Real موقعها على القطعة نفسها، أما فلل السوق المفتوح فموقعها تقريبي. الأسعار هي المطلوبة في الإعلان.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
@@ -94,17 +134,29 @@ for(const v of V){if(!v.lat)continue;mk[v.r]=L.marker([v.lat,v.lng],{icon:L.divI
 function filtered(){const mp=+$('#fp').value,mr=+$('#fr').value,a=$('#fa').value,ms=+$('#fs').value,o=$('#fo').value;
  let L2=V.filter(v=>v.p<=mp&&(!mr||(v.b||0)>=mr)&&(!a||v.area===a)&&on.has(v.st)&&(!ms||(v.school&&v.school[0]<=ms)));
  const k={sc:v=>-v.sc,p:v=>v.p,school:v=>v.school?v.school[0]:1e9,dom:v=>v.dom}[o];return L2.sort((x,y)=>k(x)-k(y)||x.r-y.r)}
+const mob=()=>matchMedia('(max-width:760px)').matches;
+function cardHTML(v,small){return `<article class="c" data-r="${v.r}" tabindex="0"><div class="t"><h3>#${v.r} · ${esc(v.loc)}</h3><span class="price">${fmt(v.p)}</span></div>
+ <div class="tags"><span class="st" style="background:${ST[v.st]}">${esc(v.st)}</span><span>${v.b??'?'} غرف</span>${v.bu?`<span>بناء ${v.bu} م²</span>`:''}${!small&&v.la?`<span>أرض ${v.la} م²</span>`:''}<span>${esc(ageTxt(v.age))}</span>${small?'':`<span>درجة ${v.sc}</span>`}</div>
+ ${v.school?`<div class="near">مدرسة <b>${km(v.school[0])}</b> · مسجد <b>${km(v.mosque[0])}</b>${small?'':` · مركز صحي <b>${km(v.health[0])}</b> · سوق <b>${km(v.shop[0])}</b>`}</div>`:'<div class="near">الإعلان ما فيه موقع على الخريطة</div>'}
+ ${!small&&v.note?`<div class="note">${esc(v.note)}</div>`:''}
+ <div class="lk"><a href="${v.u}" target="_blank" rel="noopener">الإعلان (${esc(v.src)})</a>${v.lat?`<a href="https://www.google.com/maps?q=${v.lat},${v.lng}" target="_blank" rel="noopener">Google Maps</a>`:''}${!small&&v.kr?`<span class="note">كروكي ${esc(v.kr)}</span>`:''}</div></article>`}
 function render(){const L2=filtered();const ids=new Set(L2.map(v=>v.r));
  for(const r in mk){ids.has(+r)?mk[r].addTo(map):map.removeLayer(mk[r])}
- $('#cnt').textContent=`${L2.length} فيلا · ${L2.filter(v=>v.lat).length} على الخريطة`;
- $('#list').innerHTML=L2.map(v=>`<article class="c" data-r="${v.r}" tabindex="0"><div class="t"><h3>#${v.r} · ${esc(v.loc)}</h3><span class="price">${fmt(v.p)}</span></div>
- <div class="tags"><span class="st" style="background:${ST[v.st]}">${esc(v.st)}</span><span>${v.b??'?'} غرف</span>${v.bu?`<span>بناء ${v.bu} م²</span>`:''}${v.la?`<span>أرض ${v.la} م²</span>`:''}<span>${esc(ageTxt(v.age))}</span><span>درجة ${v.sc}</span></div>
- ${v.school?`<div class="near">مدرسة <b>${km(v.school[0])}</b> · مسجد <b>${km(v.mosque[0])}</b> · مركز صحي <b>${km(v.health[0])}</b> · سوق <b>${km(v.shop[0])}</b></div>`:'<div class="near">الإعلان ما فيه موقع على الخريطة</div>'}
- ${v.note?`<div class="note">${esc(v.note)}</div>`:''}
- <div class="lk"><a href="${v.u}" target="_blank" rel="noopener">الإعلان (${esc(v.src)})</a>${v.kr?`<span class="note">كروكي ${esc(v.kr)}</span>`:''}</div></article>`).join('')||'<p class="note">ما فيه فلل بهذي الفلاتر. وسّع السعر أو المسافة.</p>'}
-function sel(r,fly=true){document.querySelectorAll('.c.sel').forEach(c=>c.classList.remove('sel'));const c=document.querySelector(`.c[data-r="${r}"]`);if(c){c.classList.add('sel');if(!fly)c.scrollIntoView({block:'nearest',behavior:'smooth'})}
- if(fly&&mk[r]){map.flyTo(mk[r].getLatLng(),16,{duration:.6});mk[r].openPopup();if(innerWidth<980)$('#map').scrollIntoView({behavior:'smooth'})}}
-$('#list').addEventListener('click',e=>{if(e.target.closest('a'))return;const c=e.target.closest('.c');if(c)sel(+c.dataset.r)});
+ $('#cnt').textContent=`${L2.length} فيلا · ${L2.filter(v=>v.lat).length} على الخريطة`;$('#mcnt').textContent=`${L2.length} فيلا`;
+ $('#strip').innerHTML=L2.filter(v=>v.lat).map(v=>cardHTML(v,true)).join('');
+ $('#list').innerHTML=L2.map(v=>cardHTML(v,false)).join('')||'<p class="note">ما فيه فلل بهذي الفلاتر. وسّع السعر أو المسافة.</p>'}
+function sel(r,fly=true){document.querySelectorAll('.c.sel').forEach(c=>c.classList.remove('sel'));
+ const box=mob()?'#strip':'#list';const c=document.querySelector(`${box} .c[data-r="${r}"]`);if(c){c.classList.add('sel');if(!fly){lock=true;c.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});setTimeout(()=>lock=false,600)}}
+ if(fly&&mk[r]){map.flyTo(mk[r].getLatLng(),16,{duration:.6});if(!mob())mk[r].openPopup()}}
+let lock=false;
+$('#list').addEventListener('click',e=>{if(e.target.closest('a'))return;const c=e.target.closest('.c');if(!c)return;const r=+c.dataset.r;if(mob()){if(!mk[r])return;view('map');setTimeout(()=>{map.invalidateSize();sel(r,false);sel(r)},50)}else sel(r)});
+$('#strip').addEventListener('click',e=>{if(e.target.closest('a'))return;const c=e.target.closest('.c');if(c)sel(+c.dataset.r)});
+let st;$('#strip').addEventListener('scroll',()=>{if(lock)return;clearTimeout(st);st=setTimeout(()=>{const s=$('#strip'),mid=s.getBoundingClientRect().left+s.clientWidth/2;let best=null,bd=1e9;s.querySelectorAll('.c').forEach(c=>{const b=c.getBoundingClientRect(),d=Math.abs(b.left+b.width/2-mid);if(d<bd){bd=d;best=c}});if(best&&!best.classList.contains('sel')){document.querySelectorAll('#strip .c.sel').forEach(x=>x.classList.remove('sel'));best.classList.add('sel');const r=+best.dataset.r;if(mk[r])map.flyTo(mk[r].getLatLng(),Math.max(map.getZoom(),15),{duration:.5})}},140)});
+function view(v){document.body.dataset.view=v;$('#vm').setAttribute('aria-pressed',v==='map');$('#vl').setAttribute('aria-pressed',v==='list');if(v==='map')setTimeout(()=>map.invalidateSize(),30)}
+$('#vm').addEventListener('click',()=>view('map'));$('#vl').addEventListener('click',()=>view('list'));
+const sheet=o=>{$('#filters').classList.toggle('open',o);$('#shade').classList.toggle('open',o)};
+$('#mf').addEventListener('click',()=>sheet(true));$('#mclose').addEventListener('click',()=>sheet(false));$('#shade').addEventListener('click',()=>sheet(false));
+addEventListener('resize',()=>map.invalidateSize());
 $('#list').addEventListener('keydown',e=>{if(e.key==='Enter'){const c=e.target.closest('.c');if(c)sel(+c.dataset.r)}});
 $('#fp').addEventListener('input',e=>{$('#pv').textContent=fmt(+e.target.value);render()});
 ['#fr','#fa','#fs','#fo'].forEach(s=>$(s).addEventListener('change',render));
