@@ -1,0 +1,1592 @@
+[
+{
+"row": 39,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية – مربع 10 (بلوك 5)",
+"price": 70000,
+"rooms": 5,
+"build": 285,
+"land": 300,
+"age": 0,
+"first": "2026-10-15",
+"dom": 38,
+"score": 89,
+"note": "منشورة مرتين بنفس السعر",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/3kbE2)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.606844,58.115790)"
+},
+"kro": "'01-05-003-10-2093"
+},
+{
+"row": 47,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة (واجهة أمامية)",
+"price": 68000,
+"rooms": 4,
+"build": 300,
+"land": 250,
+"age": 0,
+"first": "2026-09-28",
+"dom": 55,
+"score": 88,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/Eg41E)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.654953,58.069565)"
+},
+"kro": "'01-05-003-02-749"
+},
+{
+"row": 18,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة – حي التضامن",
+"price": 62000,
+"rooms": 5,
+"build": 311,
+"land": 315,
+"age": 8,
+"first": "2026-11-11",
+"dom": 11,
+"score": 87,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289910426)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.618858,58.103851)"
+},
+"kro": null
+},
+{
+"row": 12,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة",
+"price": 66000,
+"rooms": 4,
+"build": 309,
+"land": 310,
+"age": 3,
+"first": "2026-11-15",
+"dom": 7,
+"score": 87,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/290107756)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.664162,58.061366)"
+},
+"kro": null
+},
+{
+"row": 6,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الرابعة (مربع 6)",
+"price": 70000,
+"rooms": 6,
+"build": 360,
+"land": 250,
+"age": 0,
+"first": "2026-10-25",
+"dom": 28,
+"score": 87,
+"note": "أُعيد نشره؛ أول ظهور تقريباً 25-10-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289117430)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 42,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة – منطقة الجامعة الألمانية",
+"price": 70000,
+"rooms": 4,
+"build": 260,
+"land": 300,
+"age": 0,
+"first": "2026-09-22",
+"dom": 61,
+"score": 86,
+"note": "معروضة منذ 61 يوماً — مجال للتفاوض",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/laBJB)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.645600,58.058224)"
+},
+"kro": "'01-05-003-03-2644"
+},
+{
+"row": 43,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية – قرب سوق بن راشد ونستو",
+"price": 71000,
+"rooms": 6,
+"build": 319,
+"land": 320,
+"age": 0,
+"first": "2026-10-12",
+"dom": 41,
+"score": 86,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/1A37J)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.640046,58.136201)"
+},
+"kro": "'01-05-003-07-2965"
+},
+{
+"row": 48,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة – قرب الجامعة العربية المفتوحة",
+"price": 72000,
+"rooms": 4,
+"build": 353,
+"land": 313,
+"age": 0,
+"first": "2026-09-29",
+"dom": 54,
+"score": 85,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/dD2mx)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.655092,58.062648)"
+},
+"kro": "'01-05-003-02-929"
+},
+{
+"row": 4,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية – حي الزعفرانية",
+"price": 75000,
+"rooms": 5,
+"build": 310,
+"land": 300,
+"age": 0,
+"first": "2026-10-28",
+"dom": 25,
+"score": 85,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289260546)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.61591,58.126152)"
+},
+"kro": null
+},
+{
+"row": 40,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة",
+"price": 77000,
+"rooms": 5,
+"build": 300,
+"land": 379,
+"age": 0,
+"first": "2026-11-11",
+"dom": 11,
+"score": 85,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/0QAn7)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.659946,58.061391)"
+},
+"kro": null
+},
+{
+"row": 44,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الشمالية",
+"price": 78000,
+"rooms": 5,
+"build": 332,
+"land": 400,
+"age": 2,
+"first": "2026-10-25",
+"dom": 28,
+"score": 85,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/DgPaY)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.678285,58.127836)"
+},
+"kro": "'01-05-030-01-887"
+},
+{
+"row": 60,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الثامنة – خلف نستو الجديد (كورنر)",
+"price": 65000,
+"rooms": 5,
+"build": 350,
+"land": 300,
+"age": 7,
+"first": "2026-09-24",
+"dom": 59,
+"score": 84,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/0zYBM)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.658369,58.061455)"
+},
+"kro": "'01-05-003-02-2324"
+},
+{
+"row": 2,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة – خلف دوار صفاء، قرب مسجد عبدالرحمن بن رستم",
+"price": 72000,
+"rooms": 5,
+"build": 305,
+"land": 300,
+"age": 3,
+"first": "2026-10-20",
+"dom": 33,
+"score": 84,
+"note": "أُعيد نشره؛ أول ظهور تقريباً 20-10-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/288883820)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.608648,58.118294)"
+},
+"kro": null
+},
+{
+"row": 10,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة التاسعة",
+"price": 68000,
+"rooms": 5,
+"build": 315,
+"land": 300,
+"age": 3,
+"first": "2026-10-25",
+"dom": 28,
+"score": 83,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289141956)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 38,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية (بلوك 10)",
+"price": 72000,
+"rooms": 4,
+"build": 311,
+"land": 300,
+"age": 2,
+"first": "2026-10-18",
+"dom": 35,
+"score": 83,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/Age3y)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.609144,58.107563)"
+},
+"kro": "'01-05-003-10-940"
+},
+{
+"row": 5,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية – قرب شارع النور",
+"price": 73000,
+"rooms": 4,
+"build": 250,
+"land": 250,
+"age": 0,
+"first": "2026-10-31",
+"dom": 22,
+"score": 83,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289428076)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.650164,58.134682)"
+},
+"kro": null
+},
+{
+"row": 45,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة – 200م من جامع الرحمات",
+"price": 73500,
+"rooms": 5,
+"build": null,
+"land": null,
+"age": 0,
+"first": "2026-11-21",
+"dom": 1,
+"score": 83,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/BLA9k)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.642786,58.043569)"
+},
+"kro": null
+},
+{
+"row": 46,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية",
+"price": 73500,
+"rooms": 5,
+"build": null,
+"land": null,
+"age": 0,
+"first": "2026-10-19",
+"dom": 34,
+"score": 83,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/xakO4)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.614118,58.106133)"
+},
+"kro": "'01-05-003-10-178"
+},
+{
+"row": 49,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية – خلف المنتزه الأخضر",
+"price": 78000,
+"rooms": 5,
+"build": 318,
+"land": 300,
+"age": 0,
+"first": "2026-11-02",
+"dom": 20,
+"score": 83,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/3kv2j)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.629227,58.103908)"
+},
+"kro": "'01-05-003-09-878"
+},
+{
+"row": 20,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الثامنة – قرب مدرسة منارة العلم وجامع الرحموت",
+"price": 65000,
+"rooms": 6,
+"build": 350,
+"land": 350,
+"age": 8,
+"first": "2026-11-17",
+"dom": 5,
+"score": 82,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/290203136)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.643192,58.059032)"
+},
+"kro": null
+},
+{
+"row": 8,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة",
+"price": 62000,
+"rooms": 3,
+"build": 280,
+"land": 300,
+"age": 0,
+"first": "2026-11-05",
+"dom": 17,
+"score": 81,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289649250)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 41,
+"src": "OR",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الثامنة – مقابل المسجد والمحلات",
+"price": 75000,
+"rooms": 4,
+"build": 260,
+"land": 300,
+"age": 0,
+"first": "2026-10-09",
+"dom": 44,
+"score": 80,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/PzvaQ)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.648345,58.061731)"
+},
+"kro": "'01-05-003-03-1214"
+},
+{
+"row": 57,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الجنوبية – شارع النور",
+"price": 55000,
+"rooms": 4,
+"build": null,
+"land": 509,
+"age": 7,
+"first": "2026-10-03",
+"dom": 50,
+"score": 79,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/nzgxZ)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.642115,58.125719)"
+},
+"kro": "'01-05-003-07-1014"
+},
+{
+"row": 55,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الجنوبية (كورنر)",
+"price": 68000,
+"rooms": 5,
+"build": 300,
+"land": 300,
+"age": 6,
+"first": "2026-10-25",
+"dom": 28,
+"score": 79,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/BgZaV)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.612123,58.102420)"
+},
+"kro": "'01-05-003-09-2337"
+},
+{
+"row": 24,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "المعبيلة – خلف الجامعة الألمانية، قرب مسجد الودود",
+"price": 70000,
+"rooms": 5,
+"build": 335,
+"land": 300,
+"age": "قيد الإنشاء",
+"first": "2026-03-23",
+"dom": 244,
+"score": 79,
+"note": "معروضة منذ 244 يوماً — مجال للتفاوض؛ أُعيد نشره؛ أول ظهور تقريباً 23-03-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/278991503)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.642509,58.044159)"
+},
+"kro": null
+},
+{
+"row": 11,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الجنوبية – قرب الطريق السريع",
+"price": 75000,
+"rooms": 5,
+"build": 280,
+"land": 300,
+"age": 3,
+"first": "2026-10-28",
+"dom": 25,
+"score": 79,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289263530)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.607634,58.101257)"
+},
+"kro": null
+},
+{
+"row": 54,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الجنوبية – حي العين (كورنر)",
+"price": 63000,
+"rooms": 5,
+"build": 312,
+"land": 307,
+"age": 9,
+"first": "2026-10-26",
+"dom": 27,
+"score": 78,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/qzoeJ)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.633438,58.100344)"
+},
+"kro": "'01-05-003-04-2517"
+},
+{
+"row": 17,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الثامنة – قرب مدينة السلطان هيثم (كورنر)",
+"price": 64500,
+"rooms": 5,
+"build": 300,
+"land": 300,
+"age": 10,
+"first": "2026-10-26",
+"dom": 27,
+"score": 78,
+"note": "أُعيد نشره؛ أول ظهور تقريباً 26-10-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289193306)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.642708,58.070204)"
+},
+"kro": null
+},
+{
+"row": 30,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "المعبيلة",
+"price": 65000,
+"rooms": 5,
+"build": 305,
+"land": 250,
+"age": "قيد الإنشاء",
+"first": "2026-11-04",
+"dom": 18,
+"score": 78,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289586604)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 9,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة – قرب نستو",
+"price": 69000,
+"rooms": 4,
+"build": 298,
+"land": 189,
+"age": 3,
+"first": "2026-10-25",
+"dom": 28,
+"score": 78,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289113222)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 22,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة 8",
+"price": 72000,
+"rooms": 6,
+"build": 310,
+"land": 300,
+"age": 8,
+"first": "2026-10-29",
+"dom": 24,
+"score": 78,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289314562)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.62512,58.127804)"
+},
+"kro": null
+},
+{
+"row": 58,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "الشرادي / سور آل حديد – خلف مدرستي زهرة بنت قريس ورحاب",
+"price": 69000,
+"rooms": 4,
+"build": 230,
+"land": 568,
+"age": 7,
+"first": "2026-10-01",
+"dom": 52,
+"score": 77,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/0dBRg)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.679289,58.158006)"
+},
+"kro": "'01-05-026-02-310"
+},
+{
+"row": 28,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "المعبيلة – خلف نستو الثامنة",
+"price": 70000,
+"rooms": 5,
+"build": 338,
+"land": 300,
+"age": "قيد الإنشاء",
+"first": "2026-10-29",
+"dom": 24,
+"score": 77,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289305478)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.65584,58.063385)"
+},
+"kro": null
+},
+{
+"row": 3,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة الرابعة – شارع الخير قرب دوار الخير",
+"price": 72000,
+"rooms": 4,
+"build": 240,
+"land": 250,
+"age": 0,
+"first": "2026-10-26",
+"dom": 27,
+"score": 77,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289192960)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 50,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الجنوبية – قرب الشارع السريع والمنتزه",
+"price": 66000,
+"rooms": 4,
+"build": null,
+"land": 300,
+"age": 6,
+"first": "2026-11-22",
+"dom": 0,
+"score": 76,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/eD2Ee)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.630425,58.093746)"
+},
+"kro": null
+},
+{
+"row": 7,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "المعبيلة – شارع النور",
+"price": 75000,
+"rooms": 6,
+"build": 360,
+"land": 250,
+"age": 0,
+"first": "2026-11-04",
+"dom": 18,
+"score": 76,
+"note": "نفس مشروع الصف 6",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289584426)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 14,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "السيب – سور آل حديد (مجمع دار الزين)",
+"price": 64000,
+"rooms": 4,
+"build": 279,
+"land": 158,
+"age": 8,
+"first": "2026-10-17",
+"dom": 36,
+"score": 75,
+"note": "أُعيد نشره؛ أول ظهور تقريباً 17-10-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/288736290)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 59,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة السابعة – قرب جامع حي السلام",
+"price": 75000,
+"rooms": 5,
+"build": 343,
+"land": 330,
+"age": 7,
+"first": "2026-09-30",
+"dom": 53,
+"score": 75,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/neamZ)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.667293,58.109558)"
+},
+"kro": "'01-05-003-05-1553"
+},
+{
+"row": 56,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة – حي الزعفرانية، قرب الممشى الأخضر",
+"price": 62000,
+"rooms": 4,
+"build": 274,
+"land": 570,
+"age": 9,
+"first": "2026-10-18",
+"dom": 35,
+"score": 74,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/oDjjG)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.623495,58.111931)"
+},
+"kro": "'01-05-003-08-961"
+},
+{
+"row": 21,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الثامنة – قرب مدينة السلطان هيثم",
+"price": 63000,
+"rooms": 8,
+"build": 412,
+"land": 512,
+"age": 10,
+"first": "2026-11-20",
+"dom": 2,
+"score": 74,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/290354802)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 26,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "المعبيلة – خلف الجامعة الألمانية",
+"price": 71000,
+"rooms": 5,
+"build": 302,
+"land": 300,
+"age": "قيد الإنشاء",
+"first": "2026-07-18",
+"dom": 127,
+"score": 74,
+"note": "معروضة منذ 127 يوماً — مجال للتفاوض؛ أُعيد نشره؛ أول ظهور تقريباً 18-07-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/284485304)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.644115,58.04353)"
+},
+"kro": null
+},
+{
+"row": 53,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الجنوبية",
+"price": 55000,
+"rooms": 4,
+"build": 302,
+"land": 341,
+"age": 12,
+"first": "2026-10-28",
+"dom": 25,
+"score": 71,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/1a3Q0)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.654142,58.071381)"
+},
+"kro": "'01-05-003-02-687"
+},
+{
+"row": 19,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة – قرب الصفا هايبر ماركت",
+"price": 68000,
+"rooms": 5,
+"build": 378,
+"land": 310,
+"age": 10,
+"first": "2026-11-12",
+"dom": 10,
+"score": 71,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289953866)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 23,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الجنوبية – شارع الإعمار مقابل الصناعية",
+"price": 65000,
+"rooms": 5,
+"build": 225,
+"land": null,
+"age": 9,
+"first": "2026-11-10",
+"dom": 12,
+"score": 70,
+"note": "حوش مشترك مع فلتين",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289903404)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 51,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة الجنوبية",
+"price": 74000,
+"rooms": 5,
+"build": 305,
+"land": 300,
+"age": 10,
+"first": "2026-11-07",
+"dom": 15,
+"score": 70,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/DydxW)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.615208,58.117004)"
+},
+"kro": "'01-05-003-08-1482"
+},
+{
+"row": 31,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "المعبيلة – شارع الخير",
+"price": 65000,
+"rooms": null,
+"build": 315,
+"land": null,
+"age": "قيد الإنشاء",
+"first": "2026-11-05",
+"dom": 17,
+"score": 69,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289638010)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 64,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الجنوبية – قرب شارع النور",
+"price": 66000,
+"rooms": 7,
+"build": 450,
+"land": 300,
+"age": "غير مؤكد",
+"first": "2026-11-04",
+"dom": 18,
+"score": 69,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/3LKqB)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.616244,58.121035)"
+},
+"kro": "'01-05-003-08-3021"
+},
+{
+"row": 13,
+"src": "OS",
+"status": "جديدة (0–5 سنوات)",
+"loc": "السيب – الشرادي (كورنر)",
+"price": 74000,
+"rooms": 3,
+"build": 200,
+"land": 303,
+"age": 5,
+"first": "2026-10-23",
+"dom": 30,
+"score": 69,
+"note": "الوصف 3 غرف لا 4",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289054848)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 32,
+"src": "OS",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الجنوبية 9 – قرب مسجد فيصل بن تيمور",
+"price": 55000,
+"rooms": 6,
+"build": 440,
+"land": 300,
+"age": "غير مؤكد",
+"first": "2026-11-16",
+"dom": 6,
+"score": 68,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/290177096)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 52,
+"src": "OR",
+"status": "6–10 سنوات",
+"loc": "المعبيلة 8 – قرب سوق الحرامية وممشى النهدي",
+"price": 58000,
+"rooms": 4,
+"build": 249,
+"land": 422,
+"age": 11,
+"first": "2026-11-05",
+"dom": 17,
+"score": 67,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/geoZz)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.630806,58.098205)"
+},
+"kro": "'01-05-003-09-627"
+},
+{
+"row": 63,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الثامنة – قرب نستو",
+"price": 60000,
+"rooms": 5,
+"build": null,
+"land": null,
+"age": "غير مؤكد",
+"first": "2026-11-09",
+"dom": 13,
+"score": 67,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/nzAya)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.654221,58.064156)"
+},
+"kro": null
+},
+{
+"row": 75,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "السيب – الشرادي",
+"price": 63000,
+"rooms": 5,
+"build": null,
+"land": 690,
+"age": "غير مؤكد",
+"first": "2026-10-18",
+"dom": 35,
+"score": 67,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/kDeWe)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.673038,58.159611)"
+},
+"kro": "'01-05-027-01-304"
+},
+{
+"row": 34,
+"src": "OS",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة السابعة",
+"price": 66000,
+"rooms": 7,
+"build": 446,
+"land": 446,
+"age": "غير مؤكد",
+"first": "2026-11-12",
+"dom": 10,
+"score": 67,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289973862)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.639984,58.123234)"
+},
+"kro": null
+},
+{
+"row": 25,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "الشخاخيط – مقابل الجامعة العربية",
+"price": 68000,
+"rooms": 4,
+"build": 310,
+"land": 300,
+"age": "قيد الإنشاء",
+"first": "2026-06-24",
+"dom": 151,
+"score": 67,
+"note": "معروضة منذ 151 يوماً — مجال للتفاوض؛ أُعيد نشره؛ أول ظهور تقريباً 24-06-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/283342160)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.653421,58.048683)"
+},
+"kro": null
+},
+{
+"row": 27,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "الشخاخيط – خلف الجامعة الألمانية",
+"price": 72000,
+"rooms": 5,
+"build": 345,
+"land": 300,
+"age": "قيد الإنشاء",
+"first": "2026-10-06",
+"dom": 47,
+"score": 67,
+"note": "أُعيد نشره؛ أول ظهور تقريباً 06-10-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/288249780)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.651844,58.046555)"
+},
+"kro": null
+},
+{
+"row": 29,
+"src": "OS",
+"status": "قيد الإنشاء",
+"loc": "الشخاخيط – مقابل الجامعة العربية",
+"price": 72000,
+"rooms": 5,
+"build": 338,
+"land": 300,
+"age": "قيد الإنشاء",
+"first": "2026-11-21",
+"dom": 1,
+"score": 67,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/290416862)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.656708,58.038784)"
+},
+"kro": null
+},
+{
+"row": 74,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "السيب – الشرادي، قرب المدرسة الهندية واللولو",
+"price": 50000,
+"rooms": 4,
+"build": 153,
+"land": 475,
+"age": "غير مؤكد",
+"first": "2026-10-22",
+"dom": 31,
+"score": 65,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/3kDb2)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.676514,58.143640)"
+},
+"kro": "'01-05-029-01-416"
+},
+{
+"row": 65,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الجنوبية",
+"price": 67000,
+"rooms": 5,
+"build": 300,
+"land": 309,
+"age": "غير مؤكد",
+"first": "2026-10-17",
+"dom": 36,
+"score": 64,
+"note": "نفس رقم الكروكي في الصفين 65 و66 — تأكد هل هي نفس الفيلا بسعرين",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/Kl45Z)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.619847,58.127751)"
+},
+"kro": "'01-05-003-08-2517"
+},
+{
+"row": 73,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "السيب – الشرادي",
+"price": 70000,
+"rooms": 4,
+"build": 300,
+"land": 300,
+"age": "غير مؤكد",
+"first": "2026-10-27",
+"dom": 26,
+"score": 64,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/vKOaq)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.677292,58.145322)"
+},
+"kro": null
+},
+{
+"row": 36,
+"src": "BY",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة",
+"price": 69000,
+"rooms": 7,
+"build": 400,
+"land": null,
+"age": "غير مؤكد",
+"first": "2026-10-01",
+"dom": 52,
+"score": 60,
+"note": "",
+"link": {
+"markdown": "[Bayut](https://www.bayut.om/en/property/details-130323725.html)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 37,
+"src": "BY",
+"status": "العمر غير مؤكد",
+"loc": "الشخاخيط (بركاء) – بجوار مدينة السلطان هيثم",
+"price": 71000,
+"rooms": 4,
+"build": 260,
+"land": 300,
+"age": "قيد الإنشاء",
+"first": "2026-10-04",
+"dom": 49,
+"score": 60,
+"note": "",
+"link": {
+"markdown": "[Bayut](https://www.bayut.om/en/property/details-500138930.html)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 33,
+"src": "OS",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة – حي التضامن",
+"price": 75000,
+"rooms": 5,
+"build": 343,
+"land": 600,
+"age": "غير مؤكد",
+"first": "2026-10-26",
+"dom": 27,
+"score": 60,
+"note": "",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289184168)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.623914,58.0957)"
+},
+"kro": null
+},
+{
+"row": 61,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة السادسة – قرب جامع الجليل ومدرسة الطالب الذكي",
+"price": 75000,
+"rooms": 6,
+"build": 337,
+"land": 300,
+"age": "غير مؤكد",
+"first": "2026-10-04",
+"dom": 49,
+"score": 60,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/32O0Q)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.609291,58.145664)"
+},
+"kro": null
+},
+{
+"row": 15,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "السيب – مجمع دار الزين (تاون هاوس)",
+"price": 70000,
+"rooms": 4,
+"build": 300,
+"land": null,
+"age": "غير مؤكد",
+"first": "2026-10-29",
+"dom": 24,
+"score": 59,
+"note": "تاون هاوس داخل مجمع؛ أُعيد نشره؛ أول ظهور تقريباً 29-10-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/289331940)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 67,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة – مقابل جامع تيمور بن فيصل",
+"price": 67000,
+"rooms": 4,
+"build": null,
+"land": 400,
+"age": "غير مؤكد",
+"first": "2026-10-14",
+"dom": 39,
+"score": 58,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/jQ1mJ)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.644541,58.119694)"
+},
+"kro": null
+},
+{
+"row": 62,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الجنوبية – المرحلة 2",
+"price": 73000,
+"rooms": 4,
+"build": 285,
+"land": 600,
+"age": "غير مؤكد",
+"first": "2026-11-20",
+"dom": 2,
+"score": 58,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/beyW3)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.659980,58.115605)"
+},
+"kro": "'01-05-003-05-3930"
+},
+{
+"row": 35,
+"src": "BY",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة",
+"price": 68000,
+"rooms": 4,
+"build": 450,
+"land": null,
+"age": "غير مؤكد",
+"first": "2026-08-30",
+"dom": 84,
+"score": 57,
+"note": "معروضة منذ 84 يوماً — مجال للتفاوض",
+"link": {
+"markdown": "[Bayut](https://www.bayut.om/en/property/details-130833027.html)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 71,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الثامنة – قرب جامع الأمين ونستو",
+"price": 73000,
+"rooms": 5,
+"build": null,
+"land": null,
+"age": "غير مؤكد",
+"first": "2026-09-29",
+"dom": 54,
+"score": 56,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/PGRWM)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.650369,58.059605)"
+},
+"kro": "'01-05-003-03-1384"
+},
+{
+"row": 72,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة – حي الجنان، بجانب مدرسة الشيخ سعيد بن حمد الحارثي",
+"price": 75000,
+"rooms": 7,
+"build": null,
+"land": 300,
+"age": "غير مؤكد",
+"first": "2026-09-23",
+"dom": 60,
+"score": 55,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/7xvx7)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.635297,58.124220)"
+},
+"kro": "'01-05-003-07-466"
+},
+{
+"row": 69,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة – مقابل جامع الغفار قرب الممشى الأخضر",
+"price": 72000,
+"rooms": 4,
+"build": 220,
+"land": 450,
+"age": "غير مؤكد",
+"first": "2026-10-04",
+"dom": 49,
+"score": 54,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/9OOqp)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.637384,58.107342)"
+},
+"kro": "'01-05-003-04-2605"
+},
+{
+"row": 70,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الجنوبية",
+"price": 75000,
+"rooms": 4,
+"build": 231,
+"land": 526,
+"age": "غير مؤكد",
+"first": "2026-09-29",
+"dom": 54,
+"score": 53,
+"note": "نفس الفيلا منشورة بـ65 ألف عند وسيط آخر — فاوض على 65",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/PGkaP)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.641935,58.109175)"
+},
+"kro": "'01-05-003-04-1683"
+},
+{
+"row": 68,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة الجنوبية – خلف جامع الغفار",
+"price": 75500,
+"rooms": 5,
+"build": null,
+"land": null,
+"age": "غير مؤكد",
+"first": "2026-10-14",
+"dom": 39,
+"score": 53,
+"note": "",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/JgWln)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.635731,58.106243)"
+},
+"kro": null
+},
+{
+"row": 16,
+"src": "OS",
+"status": "6–10 سنوات",
+"loc": "المعبيلة السادسة – كورنر قرب جامع الجليل",
+"price": 75000,
+"rooms": 4,
+"build": 297,
+"land": 312,
+"age": 12,
+"first": "2026-08-29",
+"dom": 85,
+"score": 52,
+"note": "الإعلان يقول 9 سنوات لكن سنة البناء المسجلة 2014 (12 سنة)؛ معروضة منذ 85 يوماً — مجال للتفاوض؛ أُعيد نشره؛ أول ظهور تقريباً 29-08-2026",
+"link": {
+"markdown": "[السوق المفتوح](https://om.opensooq.com/ar/search/286460554)"
+},
+"map": null,
+"kro": null
+},
+{
+"row": 66,
+"src": "OR",
+"status": "العمر غير مؤكد",
+"loc": "المعبيلة بلوك 4 (كورنر)",
+"price": 78000,
+"rooms": 5,
+"build": null,
+"land": null,
+"age": "غير مؤكد",
+"first": "2026-10-04",
+"dom": 49,
+"score": 50,
+"note": "نفس رقم الكروكي في الصفين 65 و66 — تأكد هل هي نفس الفيلا بسعرين",
+"link": {
+"markdown": "[Oman Real](https://omanreal.com/properties/24xOJ)"
+},
+"map": {
+"markdown": "[الموقع](https://www.google.com/maps?q=23.620007,58.127838)"
+},
+"kro": "'01-05-003-08-2517"
+}
+]
