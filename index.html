@@ -69,7 +69,7 @@ footer{font-size:12px;color:var(--mute);padding:10px max(3vw,12px) 18px}
  .wrap{display:block;height:auto;min-height:0}
  body[data-view=map] .list{display:none}
  body[data-view=list] #map,body[data-view=list] .strip{display:none}
- #map{height:calc(100dvh - 104px)}
+ body #map{height:calc(100dvh - 104px)}
  .list{padding:10px 12px 20px;border:0}
  .strip{display:flex;position:fixed;inset:auto 0 calc(12px + env(safe-area-inset-bottom)) 0;z-index:1050;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 12px;scrollbar-width:none}
  .strip::-webkit-scrollbar{display:none}
@@ -151,7 +151,7 @@ function sel(r,fly=true){document.querySelectorAll('.c.sel').forEach(c=>c.classL
 let lock=false;
 $('#list').addEventListener('click',e=>{if(e.target.closest('a'))return;const c=e.target.closest('.c');if(!c)return;const r=+c.dataset.r;if(mob()){if(!mk[r])return;view('map');setTimeout(()=>{map.invalidateSize();sel(r,false);sel(r)},50)}else sel(r)});
 $('#strip').addEventListener('click',e=>{if(e.target.closest('a'))return;const c=e.target.closest('.c');if(c)sel(+c.dataset.r)});
-let st;$('#strip').addEventListener('scroll',()=>{if(lock)return;clearTimeout(st);st=setTimeout(()=>{const s=$('#strip'),mid=s.getBoundingClientRect().left+s.clientWidth/2;let best=null,bd=1e9;s.querySelectorAll('.c').forEach(c=>{const b=c.getBoundingClientRect(),d=Math.abs(b.left+b.width/2-mid);if(d<bd){bd=d;best=c}});if(best&&!best.classList.contains('sel')){document.querySelectorAll('#strip .c.sel').forEach(x=>x.classList.remove('sel'));best.classList.add('sel');const r=+best.dataset.r;if(mk[r])map.flyTo(mk[r].getLatLng(),Math.max(map.getZoom(),15),{duration:.5})}},140)});
+let st,touched=false;['pointerdown','touchstart','wheel'].forEach(ev=>$('#strip').addEventListener(ev,()=>touched=true,{passive:true}));$('#strip').addEventListener('scroll',()=>{if(lock||!touched)return;clearTimeout(st);st=setTimeout(()=>{const s=$('#strip'),mid=s.getBoundingClientRect().left+s.clientWidth/2;let best=null,bd=1e9;s.querySelectorAll('.c').forEach(c=>{const b=c.getBoundingClientRect(),d=Math.abs(b.left+b.width/2-mid);if(d<bd){bd=d;best=c}});if(best&&!best.classList.contains('sel')){document.querySelectorAll('#strip .c.sel').forEach(x=>x.classList.remove('sel'));best.classList.add('sel');const r=+best.dataset.r;if(mk[r])map.flyTo(mk[r].getLatLng(),Math.max(map.getZoom(),15),{duration:.5})}},140)});
 function view(v){document.body.dataset.view=v;$('#vm').setAttribute('aria-pressed',v==='map');$('#vl').setAttribute('aria-pressed',v==='list');if(v==='map')setTimeout(()=>map.invalidateSize(),30)}
 $('#vm').addEventListener('click',()=>view('map'));$('#vl').addEventListener('click',()=>view('list'));
 const sheet=o=>{$('#filters').classList.toggle('open',o);$('#shade').classList.toggle('open',o)};
