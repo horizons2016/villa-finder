@@ -58,7 +58,9 @@ footer{font-size:12px;color:var(--mute);padding:10px max(3vw,12px) 18px}
  .seg button{border:0;border-radius:0;min-height:40px}
  .seg button[aria-pressed=true]{background:var(--lead);color:#fff}
  .mbar .count{font-size:13px;margin-inline-start:auto}
- .filters{display:none;position:fixed;inset:auto 0 0 0;max-height:80dvh;overflow-y:auto;z-index:2000;border:0;border-radius:18px 18px 0 0;box-shadow:0 -6px 24px #0005;padding:14px 16px 20px;flex-direction:column;align-items:stretch;gap:12px}
+ .filters{display:none;position:fixed;inset:auto 0 0 0;max-height:80dvh;overflow-y:auto;z-index:2000;border:0;border-radius:18px 18px 0 0;box-shadow:0 -6px 24px #0005;padding:14px 16px 20px;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:12px}
+ .filters>*{width:100%;flex:none}
+ .filters .pill::before{content:attr(data-t);display:block;width:100%;font-size:13px;color:var(--mute)}
  .filters.open{display:flex}
  .filters label{font-size:13px}
  .filters select{min-height:46px}
@@ -98,8 +100,8 @@ footer{font-size:12px;color:var(--mute);padding:10px max(3vw,12px) 18px}
   <label>المنطقة<select id="fa"><option value="">الكل</option><option>المعبيلة</option><option>السيب والشرادي</option><option>الشخاخيط</option></select></label>
   <label>أقرب مدرسة<select id="fs"><option value="0">أي مسافة</option><option value="500">خلال 500 م</option><option value="1000">خلال 1 كم</option><option value="2000">خلال 2 كم</option></select></label>
   <label>ترتيب<select id="fo"><option value="sc">درجة الخبير</option><option value="p">الأرخص</option><option value="school">الأقرب لمدرسة</option><option value="dom">الأحدث نشرًا</option></select></label>
-  <div class="pill" id="fst"></div>
-  <div class="pill" id="flay"></div>
+  <div class="pill" id="fst" data-t="حالة الفيلا"></div>
+  <div class="pill" id="flay" data-t="إظهار على الخريطة"></div>
   <span class="count" id="cnt"></span>
 </div>
 <div class="wrap"><div id="map" aria-label="خريطة الفلل"></div><div class="list" id="list"></div></div>
