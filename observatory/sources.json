@@ -1,27 +1,16 @@
-[
-  {
-    "name": "Oman Real",
-    "url": "https://omanreal.com/",
-    "status": "legacy_only"
-  },
-  {
-    "name": "OpenSooq",
-    "url": "https://om.opensooq.com/",
-    "status": "legacy_only"
-  },
-  {
-    "name": "Bayut",
-    "url": "https://www.bayut.om/",
-    "status": "legacy_only"
-  },
-  {
-    "name": "NCSI",
-    "url": "https://www.ncsi.gov.om/",
-    "status": "candidate_aggregate_statistics"
-  },
-  {
-    "name": "Ministry of Housing and Urban Planning",
-    "url": "https://www.housing.gov.om/",
-    "status": "candidate_official_statistics"
-  }
-]
+{
+  "oman-real": {"name":"Oman Real","url":"https://www.omanreal.com/","hosts":["omanreal.com","www.omanreal.com"],"status":"permission_required","categories":["listings"],"coverage":"Oman","access":"Written feed agreement","history":"Legacy snapshot only","frequency":"Unknown","terms":"https://www.omanreal.com/terms-of-use","publish_listings":false},
+  "opensooq": {"name":"OpenSooq Oman","url":"https://om.opensooq.com/","hosts":["om.opensooq.com"],"status":"permission_required","categories":["listings"],"coverage":"Oman","access":"Written feed agreement","history":"Legacy snapshot only","frequency":"Unknown","terms":"https://om.opensooq.com/en/termOfUse","publish_listings":false},
+  "bayut": {"name":"Bayut Oman","url":"https://www.bayut.om/","hosts":["www.bayut.om","bayut.om"],"status":"permission_required","categories":["listings"],"coverage":"Oman","access":"Written feed agreement; Oman-specific rights unverified","history":"Legacy snapshot only","frequency":"Unknown","terms":"https://www.bayut.com/terms.html","publish_listings":false},
+  "ncsi": {"name":"National Centre for Statistics and Information","url":"https://www.ncsi.gov.om/publications?classification=2&page=1","hosts":["www.ncsi.gov.om","api.ncsi.gov.om"],"status":"enabled","adapter":"ncsi","categories":["official_statistics"],"coverage":"Oman","access":"Official publication index, bulletins and Statistical Year Book PDFs","history":"Selected monthly bulletins since December 2025; governorate figures for 2025","frequency":"Monthly","terms":"https://ncsi.gov.om/ar/TermsAndConditions","publish_statistics":true},
+  "mohup": {"name":"Ministry of Housing and Urban Planning","url":"https://mohup.gov.om/en/open-data/data/Realestate%20Transaction","hosts":["mohup.gov.om","cms.mohup.gov.om"],"status":"enabled","adapter":"mohup","categories":["official_statistics"],"coverage":"Oman","access":"Open CSV releases, aggregate processing only","history":"Catalog begins November 2022; availability varies","frequency":"Catalog indicates monthly; releases are intermittent","terms":"https://mohup.gov.om/pdf/footerFiles/OpenData.pdf","publish_statistics":true},
+  "osm": {"name":"OpenStreetMap contributors","url":"https://www.openstreetmap.org/copyright","hosts":["www.openstreetmap.org","tile.openstreetmap.org"],"status":"enabled","adapter":"osm","categories":["geospatial"],"coverage":"Existing POI snapshot covers part of Muscat; basemap covers Oman","access":"Repository ODbL snapshot and standard interactive map tiles","history":"Snapshot without original extraction timestamp","frequency":"Office-controlled refresh","terms":"https://www.openstreetmap.org/copyright"},
+  "geofabrik": {"name":"Geofabrik Oman","url":"https://download.geofabrik.de/asia/gcc-states.html","hosts":["download.geofabrik.de"],"status":"candidate","categories":["geospatial"],"coverage":"GCC including Oman","access":"Licensed OSM extract","history":"Regional snapshots","frequency":"Daily","terms":"https://www.openstreetmap.org/copyright"},
+  "oman-open-data": {"name":"Oman Open Data Portal","url":"https://opendata.gov.om/en","hosts":["opendata.gov.om"],"status":"candidate","categories":["official_statistics","geospatial"],"coverage":"Oman","access":"Dataset catalog and downloads","history":"Dataset-dependent","frequency":"Dataset-dependent","terms":"https://opendata.gov.om/en/license"},
+  "ncsi-portal": {"name":"NCSI Data Portal","url":"https://data.gov.om/OMHSNG2016/housing?lang=en","hosts":["data.gov.om"],"status":"candidate","categories":["official_statistics"],"coverage":"Oman and governorates","access":"Published API and data downloads; endpoint not configured","history":"Housing series by indicator","frequency":"Dataset-dependent","terms":"https://data.gov.om/legal/termsofuse?lang=en"},
+  "ebid": {"name":"Ebid Oman","url":"https://www.ebid.om/","hosts":["www.ebid.om"],"status":"permission_required","categories":["auctions"],"coverage":"Oman","access":"Permission for structured notices or feed","history":"Unknown","frequency":"Auction calendar","terms":null},
+  "mzadat": {"name":"Mzadat","url":"https://www.mzadat.om/","hosts":["www.mzadat.om"],"status":"permission_required","categories":["auctions"],"coverage":"Oman","access":"Permission for structured notices or feed","history":"Unknown","frequency":"Auction calendar","terms":"https://www.mzadat.om/terms"},
+  "al-mouj": {"name":"Al Mouj Muscat","url":"https://www.almouj.com/en/for-sale/","hosts":["www.almouj.com"],"status":"permission_required","categories":["developer_inventory"],"coverage":"Muscat, Seeb","access":"Authorized developer feed or data-sharing agreement","history":"Unknown","frequency":"Unknown","terms":null},
+  "homelist": {"name":"Homelist Oman","url":"https://homelist.om/en/developers/al-mouj-muscat/","hosts":["homelist.om"],"status":"permission_required","categories":["developer_inventory","listings"],"coverage":"Oman","access":"Authorized developer or marketplace export","history":"Unknown","frequency":"Unknown","terms":null},
+  "savills": {"name":"Savills Oman","url":"https://www.savills.om/","hosts":["www.savills.om"],"status":"candidate","categories":["agency_listings","market_reports"],"coverage":"Oman","access":"Agency feed rights and endpoint pending","history":"Publications vary","frequency":"Unknown","terms":null}
+}

@@ -1,7 +1,98 @@
-<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RAI Property Intelligence</title><style>body{font:16px system-ui;background:#f5f7f7;color:#163638;margin:0}main{max-width:1100px;margin:auto;padding:24px}h1{color:#07565b}section,article{background:white;border:1px solid #dce5e5;border-radius:12px;padding:16px;margin:10px 0}label{display:inline-grid;gap:5px;margin:5px}input,select{font:inherit;padding:10px;max-width:220px}#results{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}a{color:#07565b}small{color:#536567}</style><main><h1>RAI Property Intelligence</h1><p>الدليل العقاري | سلطنة عمان</p><section>البيانات الحالية أرشيف النموذج السابق، وليست عروضاً مؤكدة التوفر. الأسعار معلنة وليست أسعار صفقات.</section><section id="filters"><label>المحافظة<select id="gov"></select></label><label>الولاية<select id="wil"></select></label><label>النوع<select id="type"></select></label><label>المصدر<select id="source"></select></label><label>الحد الأعلى للسعر<input id="price" type="number" min="0" placeholder="ر.ع."></label><label>بحث المنطقة<input id="query"></label></section><p id="count" aria-live="polite">تحميل البيانات…</p><div id="results"></div></main><script>
-const $=id=>document.getElementById(id);let rows=[];
-const fields={gov:'governorate',wil:'wilayat',type:'type',source:'source'};
-function options(id,values){const el=$(id),old=el.value;el.replaceChildren(new Option('الكل',''));for(const v of [...new Set(values.filter(Boolean))].sort())el.add(new Option(v,v));if([...el.options].some(o=>o.value===old))el.value=old}
-function render(){const selected=rows.filter(r=>Object.entries(fields).every(([id,key])=>!$(id).value||r[key]===$(id).value)&&(! $('price').value||(r.price!=null&&Number(r.price)<=Number($('price').value)))&&String(r.area||'').includes($('query').value.trim()));$('count').textContent=selected.length+' إعلاناً مطابقاً';$('results').replaceChildren();for(const r of selected){const card=document.createElement('article');for(const [tag,value] of [['h3',r.area||'منطقة غير محددة'],['p',r.price==null?'السعر غير متاح':Number(r.price).toLocaleString('en-US')+' ر.ع.'],['p',[r.governorate,r.wilayat,r.type,r.deal].filter(Boolean).join(' · ')],['small',r.source+' | تاريخ النشر: '+(r.published_at||'غير معروف')+' | التوفر غير مؤكد']]){const e=document.createElement(tag);e.textContent=value;card.append(e)}try{const u=new URL(r.url);if(u.protocol==='https:'){const a=document.createElement('a');a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';a.textContent='فتح المصدر الأصلي';card.append(document.createElement('p')).append(a)}}catch{}$('results').append(card)}}
-fetch('legacy.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{rows=data;for(const [id,key] of Object.entries(fields))options(id,rows.map(r=>r[key]));$('filters').addEventListener('input',()=>{options('wil',rows.filter(r=>!$('gov').value||r.governorate===$('gov').value).map(r=>r.wilayat));render()});render()}).catch(()=>$('count').textContent='تعذر تحميل البيانات');
-</script></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="راي للذكاء العقاري. دليل عقاري ومرصد لبيانات السوق الرسمية في سلطنة عُمان.">
+  <title>راي للذكاء العقاري | RAI Property Intelligence</title>
+  <link rel="stylesheet" href="ui/leaflet.css">
+  <link rel="stylesheet" href="ui/app.css">
+  <script defer src="ui/leaflet.js"></script>
+  <script defer src="ui/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#directory">
+        <span class="monogram" aria-hidden="true">RAI</span>
+        <span data-t="brand">راي للذكاء العقاري</span>
+      </a>
+      <nav aria-label="Navigation">
+        <a href="#directory" data-t="directory">دليل العقارات</a>
+        <a href="#market" data-t="market">مؤشرات السوق</a>
+        <a href="#sources" data-t="sources">المصادر</a>
+      </nav>
+      <button class="language" id="language" type="button" lang="en">English</button>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="eyebrow" data-t="subbrand">سلطنة عُمان</p>
+        <h1 id="pageTitle">دليل العقارات في عُمان</h1>
+        <p id="pageLead">ابحث في الإعلانات المتاحة للنشر وتتبّع أسعار العرض ومصادرها.</p>
+      </div>
+      <div class="hero-figure">
+        <span id="heroNumber">—</span>
+        <span id="heroLabel" data-t="coverage">محافظة ضمن الدليل الجغرافي</span>
+      </div>
+    </div>
+  </section>
+  <main class="wrap" id="main">
+    <p id="loadStatus" class="notice" role="status">جارٍ تحميل البيانات…</p>
+    <section id="directory" class="page" hidden>
+      <div class="directory-layout">
+        <form class="panel filters" id="filters" aria-label="Filters">
+          <div class="filter-head"><h2 data-t="filters">تصفية النتائج</h2><button class="quiet" type="reset" data-t="reset">مسح</button></div>
+          <div id="directoryFilters"></div>
+        </form>
+        <div class="panel contents">
+          <div class="toolbar">
+            <div class="segmented" id="views">
+              <button type="button" data-view="cards" data-t="cards">بطاقات</button>
+              <button type="button" data-view="list" data-t="list">قائمة</button>
+              <button type="button" data-view="map" data-t="map">خريطة</button>
+            </div>
+            <label class="sort"><span data-t="sort">ترتيب</span><select id="sort"></select></label>
+          </div>
+          <div class="result-head">
+            <p id="count" aria-live="polite"></p>
+            <button class="quiet" type="button" id="compare" hidden></button>
+          </div>
+          <div id="listings"></div>
+          <div id="mapPane" hidden>
+            <div id="layers" class="layers"></div>
+            <div id="map" aria-label="Property map"></div>
+            <p class="muted" id="mapHint"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="market" class="page" hidden>
+      <div class="panel market-filters" id="marketFilters"></div>
+      <div class="notice" data-t="method">قراءات الإعلانات تعكس العينة المرصودة وتغطية المصادر. إحصاءات المعاملات الرسمية معروضة في قسم مستقل.</div>
+      <div id="summary" class="metrics"></div>
+      <div id="marketData"></div>
+      <section class="panel official">
+        <h2 data-t="official">إحصاءات السوق الرسمية</h2>
+        <p class="muted" data-t="officialNote">تُعرض مؤشرات المركز وملفات الوزارة مع رابط النشر. أعداد صفوف الوزارة تصف الملف المنشور.</p>
+        <div id="officialControls"></div>
+        <div id="officialData"></div>
+      </section>
+    </section>
+    <section id="sources" class="page" hidden>
+      <div id="sourceList" class="sources-grid"></div>
+    </section>
+    <noscript>يلزم تفعيل JavaScript لتصفح المرصد. JavaScript is required to view the observatory.</noscript>
+  </main>
+  <dialog id="dialog">
+    <div class="dialog-inner">
+      <div class="filter-head"><h2 id="dialogTitle"></h2><button type="button" id="closeDialog" data-t="close">إغلاق</button></div>
+      <div id="dialogBody"></div>
+    </div>
+  </dialog>
+  <footer class="wrap footer"><span>RAI Technologies</span><span id="updated"></span></footer>
+</body>
+</html>
