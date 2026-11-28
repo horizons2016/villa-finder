@@ -1,0 +1,28 @@
+{
+  "reference": "https://qanoon.om/p/2022/rd2022036/",
+  "crosscheck": "https://api.ncsi.gov.om/uploads/pdfs/statistical_year_book_2026___issue_54_1778134524.pdf",
+  "governorates": [
+    ["muscat","مسقط","Muscat",[
+      ["muscat","مسقط","Muscat"],["muttrah","مطرح","Muttrah","Mutrah","Matrah"],["amerat","العامرات","Al Amerat","Al Amrat"],["bawshar","بوشر","Bawshar","Bausher","Bosher"],["seeb","السيب","Seeb","As Seeb","Al Seeb","A'Seeb"],["qurayyat","قريات","Qurayyat","Quriyat"]]],
+    ["dhofar","ظفار","Dhofar",[
+      ["salalah","صلالة","Salalah"],["taqah","طاقة","Taqah"],["mirbat","مرباط","Mirbat"],["rakhyut","رخيوت","Rakhyut"],["thumrait","ثمريت","Thumrait","Thumrayt"],["dhalkut","ضلكوت","Dhalkut","Dalkut"],["mazyunah","المزيونة","Al Mazyunah","Al Mazuna"],["muqshin","مقشن","Muqshin","Muqshn"],["shalim","شليم وجزر الحلانيات","Shalim and the Hallaniyat Islands","Shaleem"],["sadah","سدح","Sadah","Sadh"]]],
+    ["musandam","مسندم","Musandam",[
+      ["khasab","خصب","Khasab"],["dibba","دبا","Dibba","Daba"],["bukha","بخاء","Bukha"],["madha","مدحاء","Madha"]]],
+    ["buraimi","البريمي","Al Buraimi",[
+      ["buraimi","البريمي","Al Buraimi","Buraymi"],["mahdha","محضة","Mahdha","Mahadah"],["sunaynah","السنينة","As Sunaynah","Al Sinainah"]]],
+    ["dakhiliyah","الداخلية","Ad Dakhiliyah",[
+      ["nizwa","نزوى","Nizwa"],["bahla","بهلاء","Bahla"],["manah","منح","Manah"],["hamra","الحمراء","Al Hamra"],["adam","أدم","Adam"],["izki","إزكي","Izki"],["samail","سمائل","Samail","Sumail"],["bidbid","بدبد","Bidbid","Bid Bid"],["jabal-akhdar","الجبل الأخضر","Al Jabal Al Akhdar","Jabal Akhdar"]]],
+    ["north-batinah","شمال الباطنة","North Al Batinah",[
+      ["sohar","صحار","Sohar","Suhar"],["shinas","شناص","Shinas"],["liwa","لوى","Liwa"],["saham","صحم","Saham"],["khaburah","الخابورة","Al Khaburah","Al Khaboura"],["suwayq","السويق","As Suwayq","Al Suwaiq"]]],
+    ["south-batinah","جنوب الباطنة","South Al Batinah",[
+      ["rustaq","الرستاق","Ar Rustaq","Rustaq"],["awabi","العوابي","Al Awabi"],["nakhal","نخل","Nakhal","Nakhl"],["wadi-maawil","وادي المعاول","Wadi Al Maawil"],["barka","بركاء","Barka"],["musannah","المصنعة","Al Musannah","Al Musanaah"]]],
+    ["south-sharqiyah","جنوب الشرقية","South Ash Sharqiyah",[
+      ["sur","صور","Sur"],["kamil-wafi","الكامل والوافي","Al Kamil Wal Wafi"],["jaalan-hasan","جعلان بني بو حسن","Jaalan Bani Bu Hasan","Jalan Bani Bu Hassan"],["jaalan-ali","جعلان بني بو علي","Jaalan Bani Bu Ali","Jalan Bani Bu Ali"],["masirah","مصيرة","Masirah"]]],
+    ["north-sharqiyah","شمال الشرقية","North Ash Sharqiyah",[
+      ["ibra","إبراء","Ibra"],["mudhaybi","المضيبي","Al Mudaybi","Al Mudhaibi"],["bidiyah","بدية","Bidiyah","Bidiya"],["qabil","القابل","Al Qabil"],["wadi-bani-khalid","وادي بني خالد","Wadi Bani Khalid"],["dima-taiyyin","دماء والطائيين","Dima Wa At Taiyyin","Dema and Al Tayeen"],["sinaw","سناو","Sinaw"]]],
+    ["dhahirah","الظاهرة","Adh Dhahirah",[
+      ["ibri","عبري","Ibri"],["yanqul","ينقل","Yanqul"],["dhank","ضنك","Dhank","Dank"]]],
+    ["wusta","الوسطى","Al Wusta",[
+      ["haima","هيماء","Haima","Hayma"],["mahout","محوت","Mahout","Muhut"],["duqm","الدقم","Ad Duqm","Duqm"],["jazir","الجازر","Al Jazir","Al Jazer"]]]
+  ]
+}

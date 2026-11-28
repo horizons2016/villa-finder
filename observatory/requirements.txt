@@ -1,0 +1,2 @@
+# Python 3.11+ standard library only. SQLite >= 3.38 (JSON and window functions).
+# System dependency for NCSI collection: Poppler pdftotext.
