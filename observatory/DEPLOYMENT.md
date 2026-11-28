@@ -42,6 +42,12 @@ Provide `RAI_SOURCE_CONFIG` as the path to a private JSON mapping whose keys are
 
 The scheduled adapter reads a JSON array from the approved feed. Omit feed_url for manual-only access and use `python -m rai import example-agency approved.json --observed-at 2026-11-28T00:00:00Z` with the actual UTC collection timestamp. The row format uses `external_id`, `url`, `governorate`, `wilayat`, `area`, `kind`, `deal`, `price`, `currency`, `rental_period`, `land_m2`, `built_m2`, `bedrooms`, `latitude`, `longitude`, `accuracy`, `published_at`, `last_verified`, `verification`, `availability`, `price_basis`, `description` and `public`. Use public flags only within the provider's scope. Keep credentials in the process environment or an approved secret store.
 
+### Start with a direct agency or developer export
+
+Download the [partner CSV template](partner-listings-template.csv), fill it using the partner's own inventory and save it as UTF-8 CSV. Excel can open and export that format. Start with a partner able to share stable listing IDs and individual listing URLs on an approved domain. Record authorization for ingestion and separate permission for publishing the selected fields. The importer defaults each row to private unless the partner's approved file explicitly marks it public. Keep the filled file and permission reference outside the repository.
+
+For a manual provider, configure the approved source without `feed_url` and use the same import command with a `.csv` file. CSV values for `public` include `true`, `yes` or `نعم`. Use the same `external_id` and a fresh observation timestamp for later exports. Send explicit availability changes to distinguish withdrawals or unreachability from an omitted row. The existing export command generates the vetted publishable snapshot.
+
 ## Operations and recovery
 
 - Start `python -m rai admin` with an environment-provided high-entropy `RAI_ADMIN_PASSWORD`. Sign in at `http://127.0.0.1:8766/` as `rai`. Use an SSH tunnel if remote. Serve the console only on loopback, with authentication and CSRF checks.

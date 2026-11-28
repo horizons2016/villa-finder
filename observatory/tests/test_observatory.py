@@ -1,6 +1,8 @@
 """Tests use synthetic listing rows and offline publication-format fixtures."""
 import json
 import sqlite3
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -146,6 +148,27 @@ class Persistence(unittest.TestCase):
         self.assertEqual(row["accuracy"], "approximate")
         self.assertNotIn("description", row)
         self.assertNotIn("DO_NOT_PUBLISH", json.dumps(snapshot))
+
+    def test_partner_csv_import_requires_source_and_row_publication_approval(self):
+        config = self.path.with_name("approved-test-source.json")
+        config.write_text(json.dumps({"fixture": {**SOURCE, "permission_reference": "synthetic permission"}}))
+        csv_path = self.path.with_name("agency.csv")
+        csv_path.write_text(
+            "external_id;url;wilayat;kind;deal;price;currency;public\n"
+            "A-1;https://example.com/property/1;السيب;فيلا;بيع;92000;OMR;نعم\n"
+            "A-2;https://example.com/property/2;بوشر;شقة;إيجار;400;OMR;\n",
+            encoding="utf-8-sig",
+        )
+        result = subprocess.run(
+            [sys.executable, "-m", "rai", "--db", str(self.path), "--config", str(config),
+             "import", "fixture", str(csv_path), "--observed-at", FIRST],
+            check=True, capture_output=True, text=True,
+        )
+        self.assertEqual(json.loads(result.stdout)["inserted"], 2)
+        self.assertEqual(self.query("SELECT public FROM listing_observations ORDER BY id"), [(1,), (0,)])
+        self.assertEqual(len(make_export(self.db, self.sources)["listings"]), 1)
+        unpublished_source = {"fixture": {**SOURCE, "publish_listings": False}}
+        self.assertEqual(make_export(self.db, unpublished_source)["listings"], [])
 
     def test_candidate_cannot_merge_without_review(self):
         run_listings(self.db, SOURCE, [synthetic()], FIRST)

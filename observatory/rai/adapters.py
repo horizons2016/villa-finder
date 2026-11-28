@@ -226,6 +226,40 @@ def osm_rows(path):
             yield identifier, category, text(name), *point
 
 
+PARTNER_COLUMNS = (
+    "external_id", "url", "governorate", "wilayat", "area", "kind", "deal", "price",
+    "currency", "rental_period", "land_m2", "built_m2", "bedrooms", "published_at",
+    "availability", "public",
+)
+
+
+def authorized_file(path):
+    if path.suffix.lower() != ".csv":
+        return json.loads(path.read_text(encoding="utf-8"))
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        header = stream.readline()
+        delimiter = ";" if ";" in header and "," not in header else ","
+        stream.seek(0)
+        reader = csv.DictReader(stream, delimiter=delimiter, strict=True)
+        headings = [column.strip() for column in reader.fieldnames or []]
+        if not {"external_id", "url"} <= set(headings):
+            raise ValueError("CSV requires external_id and url columns")
+        if len(set(headings)) != len(headings) or set(headings) - set(PARTNER_COLUMNS):
+            raise ValueError("CSV contains repeated or unsupported column names")
+        reader.fieldnames = headings
+        rows = []
+        for row in reader:
+            if None in row or any(value is None for value in row.values()):
+                raise ValueError(f"CSV row {reader.line_num} has the wrong number of fields")
+            clean = {key: value.strip() or None for key, value in row.items()}
+            choice = (clean.get("public") or "").casefold()
+            if choice not in ("", "true", "false", "yes", "no", "1", "0", "نعم", "لا"):
+                raise ValueError(f"CSV row {reader.line_num} has an invalid public value")
+            clean["public"] = choice in ("true", "yes", "1", "نعم")
+            rows.append(clean)
+        return rows
+
+
 def authorized_feed(source, get, bearer=None):
     data = json.loads(get(source["feed_url"], source["hosts"], bearer))
     if not isinstance(data, list):

@@ -1,10 +1,12 @@
 """Operate the property observatory from the office or CI."""
 import argparse
+import csv
 import json
 import logging
 import os
 from pathlib import Path
 
+from .adapters import authorized_file
 from .collector import collect, import_legacy, load_sources, migrate_legacy_database, run_listings
 from .database import backup, database, register
 from .export import atomic_json, build_site, make_export
@@ -74,7 +76,10 @@ def main():
             if args.file.stat().st_size > 24 * 1024 * 1024:
                 parser.error("input exceeds the import size budget")
             register(db, sources)
-            rows = json.loads(args.file.read_text(encoding="utf-8"))
+            try:
+                rows = authorized_file(args.file)
+            except (ValueError, csv.Error) as error:
+                parser.error(f"invalid listing file: {error}")
             result = run_listings(db, source, rows, utc(args.observed_at))
             with db:
                 db.execute("BEGIN IMMEDIATE")
