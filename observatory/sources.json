@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Oman Real",
+    "url": "https://omanreal.com/",
+    "status": "legacy_only"
+  },
+  {
+    "name": "OpenSooq",
+    "url": "https://om.opensooq.com/",
+    "status": "legacy_only"
+  },
+  {
+    "name": "Bayut",
+    "url": "https://www.bayut.om/",
+    "status": "legacy_only"
+  },
+  {
+    "name": "NCSI",
+    "url": "https://www.ncsi.gov.om/",
+    "status": "candidate_aggregate_statistics"
+  },
+  {
+    "name": "Ministry of Housing and Urban Planning",
+    "url": "https://www.housing.gov.om/",
+    "status": "candidate_official_statistics"
+  }
+]
